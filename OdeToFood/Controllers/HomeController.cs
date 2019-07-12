@@ -13,6 +13,7 @@ namespace OdeToFood.Controllers
 
         public ActionResult Index(string searchTerm = null)
         {
+
             var model =
                 _db.Restaurants
                 .OrderByDescending(r => r.Reviews.Count)
